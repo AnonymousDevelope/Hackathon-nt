@@ -5,6 +5,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 .text-input {
   width: 330px;
   height: 46px;
@@ -13,6 +14,7 @@
   background: var(--White-Base, #fff);
   padding: 15px 30px;
   outline: none;
+
   &::placeholder {
     color: #aaa;
     font-size: 14px;
@@ -21,9 +23,17 @@
     line-height: normal;
   }
 }
-.default-btn{
+
+.default-btn {
   text-align: center;
   padding: 5px 20px;
   border-radius: 99px;
   background: #152540;
+  border:none;
+  
+}
+
+.default-btn * {
+  @include globalFontStyle();
+  /* 200% */
 }
